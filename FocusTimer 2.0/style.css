@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-color: #323238;
+  --icons-color: #ffffff;
+  --text-color: #ffffff;
+  --button-color-default: #e1e1e6;
+  --button-color1: #02799d;
+  --button-color2: #21a736;
+  --button-color3: #a5784f;
+  --button-color4: #ff5c00;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  font-weight: bold;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.app {
+  font-size: 12.6rem;
+  display: flex;
+  align-items: center;
+  gap: 19.2rem;
+}
+
+#timer {
+  margin-bottom: -2.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+#controls {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  gap: 4rem;
+  margin-top: 4.8rem;
+}
+
+#controls button {
+  font-size: 4.8rem;
+  background: none;
+  border: none;
+  color: var(--icons-color);
+  cursor: pointer;
+}
+
+#mood-buttons button {
+  width: 13.8rem;
+  height: 15.2rem;
+  font-size: 5.6rem;
+  background: var(--button-color-default);
+  color: var(--bg-color);
+  border: none;
+  border-radius: 2.4rem;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
+#tree:hover {
+  background: var(--button-color2);
+  transition: 300ms;
+}
+
+#rain:hover {
+  background-color: var(--button-color1);
+}
+
+#store:hover {
+  background-color: var(--button-color3);
+}
+
+#fire:hover {
+  background-color: var(--button-color4);
+}
+
+#mood-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.running .ph-play-circle,
+.ph-pause-circle,
+.ph-stop-circle html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle {
+  display: none;
+}

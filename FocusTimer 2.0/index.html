@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FocusTimer 2.0</title>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./focustimer/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <div id="timer">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </div>
+
+        <div id="controls">
+          <button
+            id="playbutton"
+            data-click="toggleRunning"
+            class="ph ph-play-circle"
+          ></button>
+          <button
+            id="pausebutton"
+            data-click="toggleRunning"
+            class="ph ph-pause-circle"
+          ></button>
+          <button
+            id="stopbutton"
+            data-click="reset"
+            class="ph ph-stop-circle"
+          ></button>
+          <button
+            id="addbutton"
+            data-click="add"
+            class="ph ph-plus-circle"
+          ></button>
+          <button
+            id="removebutton"
+            data-click="remove"
+            class="ph ph-minus-circle"
+          ></button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div id="mood-buttons" class="display">
+          <button
+            data-action="musicforest"
+            id="tree"
+            class="ph ph-tree"
+          ></button>
+          <button
+            data-action="musicrain"
+            id="rain"
+            class="ph ph-cloud-rain"
+          ></button>
+          <button
+            data-action="musicnoise"
+            id="store"
+            class="ph ph-storefront"
+          ></button>
+          <button data-action="musicfire" id="fire" class="ph ph-fire"></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
